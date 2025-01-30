@@ -5,7 +5,7 @@ metadata:
   labels:
     app: hello-world
 spec:
-  replicas: 3
+  replicas: 10
   selector:
     matchLabels:
       app: hello-world
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: hello-world
-        image: docker.io/crccheck/hello-world
+        image: crccheck/hello-world
         ports:
         - containerPort: 8000
