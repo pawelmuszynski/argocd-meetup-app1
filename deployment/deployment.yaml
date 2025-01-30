@@ -16,5 +16,6 @@ spec:
     spec:
       containers:
       - name: hello-world
-        image: crccheck/hello-world
-        - containerPort: 80
+        image: docker.io/crccheck/hello-world
+        ports:
+        - containerPort: 8000
